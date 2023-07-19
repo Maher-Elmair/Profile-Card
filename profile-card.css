@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+:root {
+    background-color: rgb(25, 161, 173);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 100;
+}
+
+/*small*/
+@media (min-width: 577px) {
+    .container {
+        width: 550px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* desktop  */
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.background-container {
+    position: relative;
+    display: block;
+    z-index: -100;
+}
+
+.one_background {
+    width: 50%;
+    position: fixed;
+    top: -180px;
+    left: -30px;
+}
+
+.two_background {
+    width: 50%;
+    position: fixed;
+    bottom: 0%;
+    right: -5%;
+}
+
+@media (max-width: 900px) {
+    .one_background {
+        position: fixed;
+        top: -140px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .one_background {
+        width: 60%;
+    }
+
+    .two_background {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .one_background {
+        position: fixed;
+        top: -100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .one_background {
+        width: 70%;
+    }
+
+    .two_background {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .one_background {
+        width: 90%;
+        position: fixed;
+        top: -5%;
+        left: 5%;
+    }
+
+    .two_background {
+        width: 90%;
+        bottom: 5%;
+        right: 5%;
+    }
+}
+
+.card {
+    width: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 14rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 10px 1px #6d6d6d;
+}
+
+.one_image {
+    width: 100%;
+}
+
+.two_image {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
+    transition: 2s;
+}
+
+.two_image:hover {
+    transition: 2s;
+    transform: scale(1.09) rotateY(180deg);
+
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.one {
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+.two {
+    color: gray;
+}
+
+.there {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    color: gray;
+    border-bottom: 1px solid gainsboro;
+    text-transform: capitalize;
+    font-size: 14px;
+
+}
+
+.one_line {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.o_one {
+    padding: 0 30px 0 30px;
+}
+
+.o_two {
+    padding: 0 22px 0 20px;
+}
+
+.o_there {
+    padding: 0 22px 0 22px;
+}
+
+.two_line {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 10px 0;
+    color: gray;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.f {
+    padding: 0 25px 0 25px;
+}
+
+.l {
+    padding: 0 25px 0 25px;
+
+}
+
+.p {
+    padding: 0 25px 0 25px;
+}
+
+/*! start Attribution */
+.attribution {
+    position: relative;
+    top: 26rem;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.attribution a {
+    font-size: smaller;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.attribution a:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0a9";
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+@media (max-width: 460px) {
+    .attribution {
+        position: relative;
+        top: 16rem;
+        white-space: break-spaces;
+        line-height: 2;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+}
+
+/*! end Attribution */
